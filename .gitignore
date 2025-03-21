@@ -1,0 +1,6 @@
+.DS_Store
+api_keys.txt
+secrets.json
+.env
+config/credentials.yml
+__pycache__
