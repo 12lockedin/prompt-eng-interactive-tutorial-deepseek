@@ -253,9 +253,7 @@ DEEPSEEK_MODEL = MODEL_NAME
 
 search_client = ClientWithRetrieval(search_tool=wikipedia_search_tool, client=client, verbose=True)
 information =""
-query = "Which is Beyoncé's eigth studio album?"
-
-answer_prompt = "Here is a user query: <query>{query}</query>. Here is some relevant information: <information>{information}</information>. Please answer the question using the relevant information."
+query = "Does Trump have any cousins?"
 
 augmented_response = search_client.completion_with_retrieval(
     query=query,
